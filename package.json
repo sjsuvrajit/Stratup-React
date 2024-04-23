@@ -1,0 +1,29 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "This is for learning react",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjsuvrajit/Stratup-React.git"
+  },
+  "author": "Suvrajit Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjsuvrajit/Stratup-React/issues"
+  },
+  "homepage": "https://github.com/sjsuvrajit/Stratup-React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
