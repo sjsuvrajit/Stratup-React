@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client"; 
+
 // creating Element in React, second param is the place of attribute
 const heading = React.createElement(
   "h1",
