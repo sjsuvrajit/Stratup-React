@@ -3,15 +3,33 @@ import ReactDOM from "react-dom/client";
 
 //JSX - HTML-like or XML-like syntax
 //React Element 
-const JsxHeading = () => (<h1 id="heading">Nameste Suvra from JSX 🚀</h1>)
+const jsxHeading = (<h1 id="heading">Nameste Suvra from JSX 🚀</h1>)
 
-console.log(JsxHeading);
+const NewComponent = () => (<span>From span component</span>)
+console.log(jsxHeading);
+
+const number = 1000;
 
 //React Functional Component
 const HeadingComponent = () => (
   <div id="container">
-   {/* component composition: A component is used in other component     */}
-  < JsxHeading/>  
+   {/* component composition: A component is used in other component     
+  < JsxHeading/>  */}
+  
+  {/* We can insert React Element also */}
+  {jsxHeading}
+
+  {/* we can write javascript as well */}
+  <h2>{number}</h2>
+  {console.log(number)}
+
+  {/* we can write functioal comonent in 3 different ways */}
+  <NewComponent/>
+  <br></br>
+  <NewComponent></NewComponent>
+  <br></br>
+  {NewComponent()}
+
   <h1 className="heading">Namaste React Functional Component</h1>
   </div>
 )
