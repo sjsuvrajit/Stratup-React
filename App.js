@@ -1,42 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; 
 
-// creating Element in React, second param is the place of attribute
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello world from React!"
-);
+//JSX - HTML-like or XML-like syntax
+//React Element 
+const JsxHeading = () => (<h1 id="heading">Nameste Suvra from JSX 🚀</h1>)
 
-console.log(heading);
-//creating root to push the "h1" tag inside div
+console.log(JsxHeading);
+
+//React Functional Component
+const HeadingComponent = () => (
+  <div id="container">
+   {/* component composition: A component is used in other component     */}
+  < JsxHeading/>  
+  <h1 className="heading">Namaste React Functional Component</h1>
+  </div>
+)
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//root.render(heading);
+//this is how React Element render
+//root.render(JsxHeading);
 
-/*
-    create this by using React
-    <div id="parent">
-        <div id="child">
-            <h1>I am a h1 tag</h1>
-            <h2>I am a h2 tag</h2>
-        </div>
-        <div id="child2">
-            <h1>I am a h1 tag</h1>
-            <h2>I am a h2 tag</h2>
-        </div>
-    </div>
-*/
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am a h1 tag"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I am a h1 tag"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-]);
-
-root.render(parent);
+//this is how React Functional Compont render
+root.render(< HeadingComponent/>);
